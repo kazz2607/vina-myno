@@ -29,7 +29,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <div className="w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform flex-shrink-0">
-            <Image src="/logo.svg" alt="Myno Notes Logo" width={40} height={40} className="w-full h-full" />
+            <Image src="/logo.png" alt="Myno Notes Logo" width={40} height={40} className="w-full h-full" />
           </div>
           <span className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             Myno

@@ -57,7 +57,11 @@ const platforms: Platform[] = [
       },
     ],
     extras: [
-      { label: "Download .dmg", href: "#", style: "border" },
+      {
+        label: "Download .dmg",
+        href: "/release/Myno_Notes_x64.dmg",
+        style: "border",
+      },
       { label: "View Instruction", href: "#", style: "link" },
     ],
   },
@@ -119,7 +123,9 @@ export default function DownloadSection() {
             >
               {/* Platform icon */}
               <div className="w-14 h-14 rounded-2xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
-                <span className={`material-icons-round text-3xl ${platform.iconColor}`}>
+                <span
+                  className={`material-icons-round text-3xl ${platform.iconColor}`}
+                >
                   {platform.icon}
                 </span>
               </div>
@@ -132,7 +138,9 @@ export default function DownloadSection() {
               {platform.comingSoon ? (
                 <div className="flex flex-col items-center gap-2 w-full">
                   <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 text-sm font-semibold border border-dashed border-gray-300 dark:border-gray-600">
-                    <span className="material-icons-round text-base">schedule</span>
+                    <span className="material-icons-round text-base">
+                      schedule
+                    </span>
                     Coming Soon
                   </span>
                   <p className="text-xs text-gray-400 dark:text-gray-500">
@@ -154,8 +162,12 @@ export default function DownloadSection() {
                         {btn.symbol}
                       </span>
                       <div className="flex flex-col items-start leading-none">
-                        <span className="text-[10px] text-gray-300">{btn.label}</span>
-                        <span className="text-base font-semibold">{btn.strong}</span>
+                        <span className="text-[10px] text-gray-300">
+                          {btn.label}
+                        </span>
+                        <span className="text-base font-semibold">
+                          {btn.strong}
+                        </span>
                       </div>
                     </a>
                   ))}
@@ -178,7 +190,7 @@ export default function DownloadSection() {
                       >
                         {extra.label}
                       </a>
-                    )
+                    ),
                   )}
                 </div>
               )}

@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 mb-4 md:mb-0 group">
             <div className="w-8 h-8 rounded-lg overflow-hidden shadow-md shadow-primary/20 group-hover:scale-105 transition-transform flex-shrink-0">
-              <Image src="/logo.svg" alt="Myno Notes Logo" width={32} height={32} className="w-full h-full" />
+              <Image src="/logo.png" alt="Myno Notes Logo" width={32} height={32} className="w-full h-full" />
             </div>
             <span className="text-xl font-bold text-gray-900 dark:text-white">
               Myno

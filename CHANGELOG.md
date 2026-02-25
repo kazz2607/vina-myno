@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 
 ---
 
+## [1.2.1] - 2026-02-25
+
+### Changed
+
+- Updated application logo from SVG to PNG format (`logo.png`).
+- Updated macOS download link to use the direct `.dmg` file.
+
+---
+
 ## [1.2.0] - 2026-02-25
 
 ### Added
