@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F08570"/>
+      <stop offset="100%" style="stop-color:#F0AF80"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background (iOS squircle) -->
+  <rect width="512" height="512" rx="115" ry="115" fill="url(#bg)"/>
+
+  <!-- Pencil icon group - tilted ~-45 degrees, centered -->
+  <g transform="translate(256,230) rotate(-42)">
+    <!-- Eraser (top cap) -->
+    <rect x="-24" y="-130" width="48" height="28" rx="10" ry="10" fill="rgba(255,255,255,0.65)"/>
+    <!-- Eraser band -->
+    <rect x="-24" y="-102" width="48" height="9" fill="rgba(255,255,255,0.4)"/>
+    <!-- Pencil shaft -->
+    <rect x="-24" y="-93" width="48" height="155" rx="4" ry="4" fill="white"/>
+    <!-- Pencil tip (triangle) -->
+    <polygon points="-24,62 24,62 0,118" fill="white"/>
+  </g>
+
+  <!-- Horizontal underline -->
+  <rect x="143" y="370" width="226" height="24" rx="12" fill="white"/>
+</svg>
