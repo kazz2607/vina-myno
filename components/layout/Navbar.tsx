@@ -64,7 +64,7 @@ export default function Navbar() {
           {mounted && (
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-full text-gray-500 hover:bg-gray-100 dark:hover:bg-surface-dark dark:text-gray-400 transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 dark:hover:bg-surface-dark dark:text-gray-400 transition-colors"
               aria-label="Toggle dark mode"
             >
               {theme === "dark" ? (

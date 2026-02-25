@@ -109,7 +109,7 @@ export default function ThemesSection() {
                   <div className="h-3 w-full bg-gray-100 rounded" />
                   <div className="h-3 w-3/4 bg-gray-100 rounded" />
                 </div>
-                <div className="absolute bottom-6 right-6 bg-white shadow-lg rounded-full p-2 border border-gray-100">
+                <div className="absolute bottom-6 right-6 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center border border-gray-100">
                   <span className="material-icons-round text-yellow-500">
                     light_mode
                   </span>
@@ -131,7 +131,7 @@ export default function ThemesSection() {
                   <div className="h-3 w-full bg-gray-700/60 rounded" />
                   <div className="h-3 w-3/4 bg-gray-700/60 rounded" />
                 </div>
-                <div className="absolute bottom-6 left-6 bg-gray-800 shadow-lg rounded-full p-2 border border-gray-700">
+                <div className="absolute bottom-6 left-6 bg-gray-800 shadow-lg rounded-full w-10 h-10 flex items-center justify-center border border-gray-700">
                   <span className="material-icons-round text-blue-400">
                     dark_mode
                   </span>
