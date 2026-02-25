@@ -47,18 +47,18 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between text-sm text-gray-500 dark:text-gray-500 pt-8 border-t border-gray-200 dark:border-gray-800">
           <p>© 2025 Myno Notes. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a
-              href="#"
+            <Link
+              href="/privacy"
               className="hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               Privacy Policy
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/terms"
               className="hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>

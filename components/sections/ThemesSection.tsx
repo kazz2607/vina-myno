@@ -9,10 +9,10 @@ export default function ThemesSection() {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           {/* Left: Text */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
             className="lg:w-1/2 space-y-6"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 text-sm font-semibold border border-purple-200 dark:border-purple-800">
@@ -55,7 +55,7 @@ export default function ThemesSection() {
               ].map((swatch) => (
                 <div key={swatch.label} className="flex flex-col items-center">
                   <div
-                    className={`w-16 h-10 ${swatch.bg} border ${swatch.border} ${swatch.shadow} rounded-lg mb-2 hover:scale-105 transition-transform cursor-pointer`}
+                    className={`w-16 h-10 ${swatch.bg} border ${swatch.border} ${swatch.shadow} rounded-lg mb-2 hover:scale-105 transition-transform duration-200 will-change-transform cursor-pointer`}
                   />
                   <span className="text-xs font-medium text-gray-500">
                     {swatch.label}
@@ -86,10 +86,10 @@ export default function ThemesSection() {
 
           {/* Right: Split preview */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 15 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.15 }}
+            transition={{ duration: 0.4, delay: 0.15 }}
             className="lg:w-1/2 relative"
           >
             <div className="absolute inset-4 bg-gradient-to-r from-purple-500/15 to-primary/15 blur-2xl rounded-full opacity-50" />

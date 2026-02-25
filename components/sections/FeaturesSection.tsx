@@ -41,8 +41,8 @@ const containerVariants = {
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, y: 10 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
 };
 
 export default function FeaturesSection() {
@@ -54,10 +54,10 @@ export default function FeaturesSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="section-label">Why Myno Notes</span>
@@ -79,10 +79,10 @@ export default function FeaturesSection() {
             <motion.div
               key={feature.title}
               variants={cardVariants}
-              className="group p-8 rounded-2xl bg-gray-50 dark:bg-background-dark hover:bg-white dark:hover:bg-[#2A2423] hover:shadow-xl hover:shadow-gray-200/50 dark:hover:shadow-black/30 transition-all border border-transparent hover:border-gray-100 dark:hover:border-gray-700 cursor-pointer"
+              className="group p-8 rounded-2xl bg-gray-50 dark:bg-background-dark hover:bg-white dark:hover:bg-[#2A2423] hover:shadow-md transition-colors border border-transparent hover:border-gray-100 dark:hover:border-gray-700 cursor-pointer"
             >
               <div
-                className={`w-14 h-14 rounded-2xl ${feature.bg} ${feature.text} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                className={`w-14 h-14 rounded-2xl ${feature.bg} ${feature.text} flex items-center justify-center mb-6 transition-transform duration-200 will-change-transform group-hover:scale-105`}
               >
                 <span className="material-icons-round text-3xl">
                   {feature.icon}
@@ -100,10 +100,10 @@ export default function FeaturesSection() {
 
         {/* Extra features row */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[

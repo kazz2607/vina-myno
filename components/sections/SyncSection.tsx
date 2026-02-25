@@ -27,10 +27,10 @@ export default function SyncSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: File sync mockup */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
             className="order-2 lg:order-1 relative"
           >
             <div className="grid-bg absolute inset-0 rounded-3xl opacity-50" />
@@ -53,10 +53,10 @@ export default function SyncSection() {
                 {files.map((file, i) => (
                   <motion.div
                     key={file.name}
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={{ opacity: 0, y: 5 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.1 * i }}
+                    transition={{ duration: 0.3, delay: 0.1 * i }}
                     className="flex items-center justify-between p-4 bg-white dark:bg-[#252525] rounded-xl shadow-sm border border-gray-100 dark:border-gray-700/50"
                   >
                     <div className="flex items-center gap-3">
@@ -101,10 +101,10 @@ export default function SyncSection() {
 
           {/* Right: Text */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 15 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.15 }}
+            transition={{ duration: 0.4, delay: 0.15 }}
             className="order-1 lg:order-2 space-y-6"
           >
             <div className="w-14 h-14 rounded-2xl bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 flex items-center justify-center">

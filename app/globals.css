@@ -53,13 +53,14 @@ body {
   }
 
   .btn-primary {
-    @apply flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-bold transition-all duration-200;
-    box-shadow: 0 8px 24px rgba(242, 140, 110, 0.28);
+    @apply flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-bold transition-transform transition-shadow duration-200;
+    box-shadow: 0 6px 16px rgba(242, 140, 110, 0.2);
+    will-change: transform;
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 32px rgba(242, 140, 110, 0.38);
+    box-shadow: 0 8px 20px rgba(242, 140, 110, 0.3);
   }
 
   .btn-secondary {
@@ -81,8 +82,12 @@ body {
 
 /* Slow spin animation - dùng CSS thay animate-spin của Tailwind */
 @keyframes slow-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .animate-slow-spin {

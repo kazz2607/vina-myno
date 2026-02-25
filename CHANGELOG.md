@@ -4,6 +4,24 @@ All notable changes to this project are documented here.
 
 ---
 
+## [1.2.0] - 2026-02-25
+
+### Added
+
+- Privacy Policy page (`/privacy`)
+- Terms of Service page (`/terms`)
+- Footer links to the new legal pages
+
+### Changed
+
+- Replaced generic `transition-all` with specific `transition-transform`, `transition-colors`, or `transition-shadow` classes across all components for better CSS animation performance.
+- Reduced `translateY`, `translateX`, `scale`, and `duration` values for `framer-motion` enter animations and Tailwind CSS hover states to make interactions feel snappier.
+- Added `will-change-transform` to heavily animated elements (e.g., buttons and feature cards) to utilize GPU hardware acceleration.
+- Reduced box-shadow intensities on hover for `PricingSection` and `FeaturesSection`.
+- Removed `whileHover={{ rotate: 0 }}` from the large HeroSection mockup to fix severe DOM paint jittering on hover.
+
+---
+
 ## [1.1.0] - 2026-02-25
 
 ### Fixed

@@ -15,20 +15,19 @@ const plans = [
     features: [
       "Unlimited local notes",
       "Basic markdown formatting",
-      "Sync up to 2 devices",
+      "Local storage",
       "Dark mode",
-      "Mobile apps (iOS & Android)",
     ],
     iconColor: "text-green-500",
   },
   {
     name: "Pro",
     tagline: "For power users who need more.",
-    price: "$4.99",
-    priceSuffix: "/ month",
+    price: "Coming soon",
+    priceSuffix: "",
     highlighted: true,
     badge: "Most Popular",
-    cta: "Start Pro Trial",
+    cta: "Contact us",
     ctaHref: "#",
     features: [
       "Unlimited device sync",
@@ -51,10 +50,10 @@ export default function PricingSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
@@ -70,14 +69,14 @@ export default function PricingSection() {
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.15 }}
-              className={`relative rounded-3xl p-8 transition-shadow hover:shadow-xl ${
+              transition={{ duration: 0.4, delay: i * 0.15 }}
+              className={`relative rounded-3xl p-8 transition-colors transition-shadow hover:shadow-lg ${
                 plan.highlighted
                   ? "bg-white dark:bg-surface-dark border border-primary/20 shadow-xl shadow-primary/5"
-                  : "bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md"
+                  : "bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 shadow-sm"
               }`}
             >
               {/* Badge */}
@@ -122,7 +121,7 @@ export default function PricingSection() {
               {plan.highlighted ? (
                 <Link
                   href={plan.ctaHref}
-                  className="block w-full py-3 px-6 text-center rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-bold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all hover:-translate-y-0.5"
+                  className="block w-full py-3 px-6 text-center rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-bold shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/30 transition-transform transition-shadow duration-300 will-change-transform hover:-translate-y-0.5"
                 >
                   {plan.cta}
                 </Link>

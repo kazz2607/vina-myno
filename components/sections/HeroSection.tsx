@@ -12,9 +12,9 @@ export default function HeroSection() {
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8">
           {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.4 }}
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-100 dark:bg-orange-900/30 text-secondary text-sm font-semibold border border-orange-200 dark:border-orange-800"
           >
             <span className="flex h-2 w-2 rounded-full bg-secondary animate-pulse" />
@@ -23,9 +23,9 @@ export default function HeroSection() {
 
           {/* Headline */}
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="text-5xl lg:text-7xl font-display font-extrabold tracking-tight leading-[1.1]"
           >
             Capture Your <br />
@@ -35,9 +35,9 @@ export default function HeroSection() {
 
           {/* Description */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className="text-lg text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed"
           >
             A beautifully minimalist workspace designed for focus. Seamlessly
@@ -47,9 +47,9 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
             <Link href="#download" className="btn-primary text-lg">
@@ -66,7 +66,7 @@ export default function HeroSection() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             className="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-500"
           >
             <div className="flex items-center gap-2">
@@ -92,9 +92,9 @@ export default function HeroSection() {
 
         {/* Right: App Mockup */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[600px] flex items-center justify-center"
         >
           {/* Glow background - dùng blur nhỏ hơn để nhẹ GPU */}
@@ -102,9 +102,7 @@ export default function HeroSection() {
 
           {/* App window */}
           <motion.div
-            initial={{ rotate: -2 }}
-            whileHover={{ rotate: 0 }}
-            transition={{ duration: 0.5, type: "tween" }}
+            initial={{ rotate: -1 }}
             className="relative w-full h-full max-h-[500px] glass-panel rounded-2xl shadow-xl overflow-hidden flex flex-col"
           >
             {/* Title bar */}
