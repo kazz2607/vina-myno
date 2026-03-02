@@ -75,7 +75,7 @@ const platforms: Platform[] = [
         label: "Get it from",
         strong: "Microsoft Store",
         bg: "bg-black",
-        href: "#",
+        href: "/release/Myno_Notes_x64.exe",
         symbol: "window",
         symbolColor: "text-blue-400",
       },
