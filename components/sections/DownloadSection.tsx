@@ -52,7 +52,7 @@ const platforms: Platform[] = [
         label: "Download on the",
         strong: "Mac App Store",
         bg: "bg-black",
-        href: "#",
+        href: "/release/Myno_Notes_x64.dmg",
         symbol: "laptop_mac",
       },
     ],
@@ -81,7 +81,11 @@ const platforms: Platform[] = [
       },
     ],
     extras: [
-      { label: "Download .exe", href: "#", style: "border" },
+      { 
+        label: "Download .exe", 
+        href: "/release/Myno_Notes_x64.exe", 
+        style: "border" 
+      },
       { label: "View Instruction", href: "#", style: "link" },
     ],
   },
