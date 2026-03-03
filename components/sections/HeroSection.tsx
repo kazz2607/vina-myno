@@ -18,7 +18,7 @@ export default function HeroSection() {
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-100 dark:bg-orange-900/30 text-secondary text-sm font-semibold border border-orange-200 dark:border-orange-800"
           >
             <span className="flex h-2 w-2 rounded-full bg-secondary animate-pulse" />
-            v4.6.0 is now available
+            v4.7.0 is now available
           </motion.div>
 
           {/* Headline */}
